@@ -1,0 +1,39 @@
+/** This model is part of the RAPID-ML e-learning program.<br />
+    Copyright (c) 2017 ModelSolv Inc. All rights reserved. */
+rapidModel Restaurant
+
+	dataModel RestaurantDataModel
+
+		/** ### Purpose 
+	
+		Here, we're translating from a simple, natural language 
+	    description into a RAPID-ML data structure. The goal is to get familiar with 
+	    primitive data types, and how to use them in data structures. 
+	    
+	    ### Instructions
+	    
+	    Create a data structure that matches the following description:
+	    
+	    > A Restaurant has the following propeties:
+		> * A name
+		> * One or more cuisines
+		> * Star Rating (whole number between 1 and 10)
+		> * Number of Reviews
+		> * date opened
+		> * postal code
+		> * Weekday opening time
+		> * Weekday closing time
+		> * Does or does not take reservations
+	    
+		### Answer:*/
+		structure Restaurant
+			name : string
+			cuisines : string+
+			starRating : integer
+			numReviews : integer
+			dateOpened : date
+			postalCode : string
+			weekdayOpeningTime : time
+			weekdayClosingTime : time
+			takesReservations : boolean
+			
