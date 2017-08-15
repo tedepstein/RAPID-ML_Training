@@ -1,5 +1,5 @@
-/** <p>This model is part of the RAPID-ML e-learning program.</p>
-    <p>Copyright (c) 2017 ModelSolv Inc. All rights reserved.</p> */
+/** This model is part of the RAPID-ML e-learning program.<br/>
+    Copyright (c) 2017 ModelSolv Inc. All rights reserved. */
 rapidModel Restaurant
 
 	dataModel RestaurantDataModel

@@ -1,0 +1,44 @@
+/** This model is part of the RAPID-ML e-learning program.<br/>
+    Copyright (c) 2017 ModelSolv Inc. All rights reserved. */
+rapidModel Restaurant
+
+	dataModel RestaurantDataModel
+
+		/** ### Purpose 
+	
+		Another example, translating from a natural language 
+	    description into a RAPID-ML data structure. The goal is to get familiar 
+	    with primitive data types and cardinalities. 
+	    
+	    ### Instructions
+	    
+	    Create a data structure that matches the following description:
+	    
+	    > A Phone Configuration describes an IP phone setup, with these propeties:
+		> * A required serial number (alphanumeric)
+		> * A phone model (alphanumeric)
+		> * One or more assigned SIP numbers
+		> * Zero or more assigned phone numbers
+		> * A required extension number
+		> * DND active/inactive
+		> * Voice Mail indicator on/off
+		> * Time elapsed on current phone call
+		> * Configuration settings URL
+		> * Recent outgoing phone numbers
+		> * Recent incoming phone numbers
+	    
+		Answer: */
+		structure PhoneConfiguration
+			serialNum : string!
+			phoneModel : string
+			assignedSIPs : integer+
+			phoneNumbers : string*
+			extension : string!
+			dndActive : boolean
+			voiceMailIndicator : boolean
+			currentCallTimeElapsed : duration
+			cofigURL : anyURI
+			recentOutgoingNumbers : string*
+			recentIncomingNumbers : string* 
+			
+			
